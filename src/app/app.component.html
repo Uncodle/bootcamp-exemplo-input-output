@@ -1,4 +1,8 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<hello name="Rochelle" (answerFromUser)="getAnswer($event)"></hello>
+
+<hr />
+
+<ng-template [ngIf]="hasAnswer">
+  O usuário <strong>{{ userResponse }} </strong> de falar sobre os produtos
+  Ivone
+</ng-template>
